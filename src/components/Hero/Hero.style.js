@@ -6,6 +6,7 @@ export const Section = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 6.4rem;
 `;
 
 export const Container = styled.div`
@@ -30,7 +31,7 @@ export const Desc = styled.div`
   display: block;
   margin-top: auto;
   margin-bottom: auto;
-  width: 50%;
+  width: 44%;
 
   .tagline {
     font-family: "Poppins", sans-serif;
@@ -47,7 +48,8 @@ export const Desc = styled.div`
     margin: 0 0 1.6rem 0;
     background-image: url(${HeroDescDecore});
     background-repeat: no-repeat;
-    background-position: 13rem 4.8rem;
+    background-position: 106% 19%;
+    background-size: 22rem;
   }
 
   .desc {
@@ -103,7 +105,7 @@ export const CTA = styled.div`
   }
 
   .play-button-icon {
-    margin-left: 0.8rem;
+    margin-left: 1.2rem;
     width: 0;
     height: 0;
     border-top: 0.4rem solid transparent;
@@ -113,8 +115,7 @@ export const CTA = styled.div`
 `;
 
 export const Image = styled.div`
-  display: block;
-  width: 50%;
+  width: 56%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,6 +124,6 @@ export const Image = styled.div`
     width: 100%;
     background-image: url(${HeroImagePlane}), url(${HeroImagePlane});
     background-repeat: no-repeat, no-repeat;
-    background-position: 6rem 2rem, 31rem 4.2rem;
+    background-position: 22% 6%, 98% 16%;
   }
 `;
