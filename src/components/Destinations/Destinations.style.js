@@ -4,7 +4,11 @@ export const Section = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 6.4rem;
+  margin-bottom: 4rem;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 export const Container = styled.div`
@@ -20,23 +24,27 @@ export const Container = styled.div`
 `;
 
 export const DestinationsContent = styled.div`
-  padding: 2.4rem 0;
+  padding: 2.5rem 0;
 `;
 
 export const Title = styled.div`
   text-align: center;
-  margin-bottom: 3.2rem;
+  margin-bottom: 3rem;
 
   .title {
     font-family: "Poppins", sans-serif;
     color: #5e6282;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
   }
 
   .desc {
     font-family: "Volkhov", serif;
-    font-size: 2.4rem;
-    margin-bottom: 2.4rem;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 2rem;
+    }
   }
 `;
 
@@ -54,34 +62,55 @@ export const Destination = styled.div`
       0px 20px 13px rgba(0, 0, 0, 0.01),
       0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
       0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
-    border-radius: 1.6rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.5rem;
+
+    @media screen and (max-width: 1024px) {
+      border-radius: 1rem;
+    }
   }
 
   .card-image {
-    border-top-left-radius: 1.6rem;
-    border-top-right-radius: 1.6rem;
-    width: 18rem;
+    width: 16rem;
+    height: 18rem;
+    object-fit: cover;
+
+    @media screen and (max-width: 1024px) {
+      width: 12rem;
+      height: 14rem;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
   }
 
   .card-title {
     display: flex;
     justify-content: space-between;
     font-family: "Poppins", sans-serif;
-    padding: 0.8rem 1.2rem 0.4rem;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
     color: #5e6282;
     font-size: 1rem;
+    font-weight: 600;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 0.875rem;
+    }
   }
 
   .card-desc {
     display: flex;
     font-family: "Poppins", sans-serif;
-    padding: 0rem 1.2rem 1.6rem;
+    padding: 0 1rem 1.5rem;
     color: #5e6282;
-    font-size: 1rem;
+    font-size: 0.825rem;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 0.75rem;
+    }
 
     img {
       margin-right: 0.5rem;
+      width: 1rem;
     }
   }
 `;

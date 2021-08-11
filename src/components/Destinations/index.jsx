@@ -22,8 +22,8 @@ function Destinations(props) {
             <div className="card">
               <img src={RomeItaly} alt="" className="card-image" />
               <div className="card-title">
-                <h4>Rome, Italy</h4>
-                <h4>$5,42k</h4>
+                <p>Rome, Italy</p>
+                <p>$5,42k</p>
               </div>
               <div className="card-desc">
                 <img src={NavigationVector} alt="" />
@@ -33,8 +33,8 @@ function Destinations(props) {
             <div className="card">
               <img src={RomeItaly} alt="" className="card-image" />
               <div className="card-title">
-                <h4>Rome, Italy</h4>
-                <h4>$5,42k</h4>
+                <p>Rome, Italy</p>
+                <p>$5,42k</p>
               </div>
               <div className="card-desc">
                 <img src={NavigationVector} alt="" />
@@ -44,8 +44,8 @@ function Destinations(props) {
             <div className="card">
               <img src={RomeItaly} alt="" className="card-image" />
               <div className="card-title">
-                <h4>Rome, Italy</h4>
-                <h4>$5,42k</h4>
+                <p>Rome, Italy</p>
+                <p>$5,42k</p>
               </div>
               <div className="card-desc">
                 <img src={NavigationVector} alt="" />

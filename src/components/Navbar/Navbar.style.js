@@ -24,15 +24,14 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
+  padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
 export const Logo = styled.img`
-  height: 1.6rem;
+  height: 2rem;
 `;
 
 export const Menu = styled.div`
@@ -46,7 +45,7 @@ export const Menu = styled.div`
     height: 100%;
     background-color: #ff946d;
     right: -100%;
-    top: 72px;
+    top: 4.5rem;
     text-align: center;
     transition: all 0.3s;
   }
@@ -70,15 +69,15 @@ export const Nav = styled.nav`
     li {
       @media screen and (max-width: 768px) {
         display: block;
-        margin-top: 3.6rem;
+        margin-top: 3.5rem;
         line-height: 30px;
       }
     }
 
     a {
       text-decoration: none;
-      margin: 0 0.4rem;
-      padding: 0 0.8rem;
+      margin: 0 0.5rem;
+      padding: 0 0.5rem;
       font-family: "Roboto", sans-serif;
       font-weight: 500;
       color: #212832;
@@ -93,7 +92,11 @@ export const Nav = styled.nav`
 export const Auth = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 2.4rem;
+  margin-left: 2.5rem;
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 1.5rem;
+  }
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -102,7 +105,7 @@ export const Auth = styled.div`
 
   a {
     text-decoration: none;
-    padding: 0 0.8rem;
+    padding: 0 0.5rem;
     font-family: "Roboto", sans-serif;
     color: #212832;
     font-weight: 500;
@@ -110,16 +113,16 @@ export const Auth = styled.div`
     @media screen and (max-width: 768px) {
       color: #fff;
       display: block;
-      margin-top: 3.6rem;
+      margin-top: 3.5rem;
       line-height: 30px;
     }
   }
 
   .signup {
-    margin-left: 0.8rem;
+    margin-left: 1rem;
     border: 2px solid #212832;
-    border-radius: 0.4rem;
-    padding: 0.4rem 1.2rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
 
     @media screen and (max-width: 768px) {
       border: 2px solid #fff;
