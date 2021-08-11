@@ -7,7 +7,7 @@ import {
   Image,
   CTA,
 } from "./Hero.style";
-import HeroImage from "./../../assets/img/hero-image.png";
+import HeroImage from "./../../assets/img/section/hero/image.png";
 
 function Hero(props) {
   return (

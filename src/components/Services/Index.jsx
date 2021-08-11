@@ -6,7 +6,10 @@ import {
   Title,
   Category,
 } from "./Services.style";
-import SateliteDish from "./../../assets/img/services-category-satelite-dish.png";
+import SateliteDish from "./../../assets/img/section/services/category-satelite-dish.png";
+import Plane from "./../../assets/img/section/services/category-plane.png";
+import Microphone from "./../../assets/img/section/services/category-microphone.png";
+import PowerSuply from "./../../assets/img/section/services/category-power-suply.png";
 
 function Services(props) {
   return (
@@ -30,36 +33,36 @@ function Services(props) {
               </p>
             </div>
             <div className="card">
-              <img src={SateliteDish} alt="" className="card-image" />
-              <h4 className="card-title">Calculated Weather</h4>
+              <img src={Plane} alt="" className="card-image" />
+              <h4 className="card-title">Best Flight</h4>
               <p className="card-desc">
-                Built Wicker longer
+                Engrossed listening.
                 <br />
-                admire do barton
+                Park gate sell they west
                 <br />
-                vanity itself do in it
+                hard for the.
               </p>
             </div>
             <div className="card">
-              <img src={SateliteDish} alt="" className="card-image" />
-              <h4 className="card-title">Calculated Weather</h4>
+              <img src={Microphone} alt="" className="card-image" />
+              <h4 className="card-title">Local Events</h4>
               <p className="card-desc">
-                Built Wicker longer
+                Barton vanity itself do
                 <br />
-                admire do barton
+                in it. Preferd to men it
                 <br />
-                vanity itself do in it
+                engrossed listening.
               </p>
             </div>
             <div className="card">
-              <img src={SateliteDish} alt="" className="card-image" />
-              <h4 className="card-title">Calculated Weather</h4>
+              <img src={PowerSuply} alt="" className="card-image" />
+              <h4 className="card-title">Customization</h4>
               <p className="card-desc">
-                Built Wicker longer
+                We deliver outsourced
                 <br />
-                admire do barton
+                aviation services for
                 <br />
-                vanity itself do in it
+                military customers
               </p>
             </div>
           </Category>

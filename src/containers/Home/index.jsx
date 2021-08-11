@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import BookTrip from "../../components/BookTrip";
 import Destinations from "../../components/Destinations";
 import Hero from "../../components/Hero";
 import Navbar from "../../components/Navbar";
@@ -11,6 +12,7 @@ function Home(props) {
       <Hero></Hero>
       <Services></Services>
       <Destinations></Destinations>
+      {/* <BookTrip></BookTrip> */}
     </Fragment>
   );
 }

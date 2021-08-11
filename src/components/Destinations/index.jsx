@@ -6,8 +6,8 @@ import {
   Title,
   Destination,
 } from "./Destinations.style";
-import RomeItaly from "./../../assets/img/destination-destination-rome.png";
-import NavigationVector from "./../../assets/img/destinations-destination-navigation.svg";
+import RomeItaly from "./../../assets/img/section/destination/destination-rome.png";
+import NavigationVector from "./../../assets/img/section/destination/destination-navigation.svg";
 
 function Destinations(props) {
   return (

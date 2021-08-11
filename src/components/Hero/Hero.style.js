@@ -1,12 +1,16 @@
 import styled from "styled-components";
-import HeroDescDecore from "./../../assets/img/hero-desc-decore.png";
-import HeroImagePlane from "./../../assets/img/hero-image-plane.png";
+import HeroDescDecore from "./../../assets/img/section/hero/desc-decore.png";
+import HeroImagePlane from "./../../assets/img/section/hero/image-plane.png";
 
 export const Section = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 6.4rem;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 3.6rem;
+  }
 `;
 
 export const Container = styled.div`
@@ -25,6 +29,10 @@ export const HeroContent = styled.div`
   padding: 2.4rem 0;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Desc = styled.div`
@@ -33,12 +41,21 @@ export const Desc = styled.div`
   margin-bottom: auto;
   width: 44%;
 
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    order: 2;
+  }
+
   .tagline {
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-size: 1.2rem;
     color: #df6951;
     margin: 0 0 0.8rem 0;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 1rem;
+    }
   }
 
   .heading {
@@ -50,6 +67,11 @@ export const Desc = styled.div`
     background-repeat: no-repeat;
     background-position: 106% 19%;
     background-size: 22rem;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 3.2rem;
+      background-position: 60% 22%;
+    }
   }
 
   .desc {
@@ -74,6 +96,10 @@ export const CTA = styled.div`
     margin-right: 2.4rem;
     box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.25);
     transition: all 0.3s ease;
+
+    @media screen and (max-width: 1024px) {
+      margin-right: 1.8rem;
+    }
 
     &:hover {
       transform: scale(0.96);
@@ -120,10 +146,20 @@ export const Image = styled.div`
   justify-content: center;
   align-items: center;
 
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    order: 1;
+    margin-bottom: 2.4rem;
+  }
+
   img {
     width: 100%;
     background-image: url(${HeroImagePlane}), url(${HeroImagePlane});
     background-repeat: no-repeat, no-repeat;
     background-position: 22% 6%, 98% 16%;
+
+    @media screen and (max-width: 1024px) {
+      width: 80%;
+    }
   }
 `;

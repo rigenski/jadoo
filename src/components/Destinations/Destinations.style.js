@@ -42,8 +42,9 @@ export const Title = styled.div`
 
 export const Destination = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 
   .card {
     text-align: center;
@@ -54,11 +55,13 @@ export const Destination = styled.div`
       0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
       0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
     border-radius: 1.6rem;
+    margin-bottom: 2.4rem;
   }
 
   .card-image {
     border-top-left-radius: 1.6rem;
     border-top-right-radius: 1.6rem;
+    width: 18rem;
   }
 
   .card-title {
