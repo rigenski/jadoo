@@ -11,7 +11,7 @@ import {
 } from "./Navbar.style";
 import LogoJadoo from "./../../assets/img/logo/logo-jadoo.svg";
 
-function Navbar(props) {
+function Navbar() {
   const [drawer, setDrawer] = useState(false);
 
   const onDrawerClick = () => {

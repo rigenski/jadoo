@@ -72,18 +72,27 @@ export const Nav = styled.nav`
         margin-top: 3.5rem;
         line-height: 30px;
       }
-    }
 
-    a {
-      text-decoration: none;
-      margin: 0 0.5rem;
-      padding: 0 0.5rem;
-      font-family: "Roboto", sans-serif;
-      font-weight: 500;
-      color: #212832;
+      a {
+        text-decoration: none;
+        margin: 0 0.5rem;
+        padding: 0 0.5rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        color: #212832;
+        transition: all 0.3s;
 
-      @media screen and (max-width: 768px) {
-        color: #fff;
+        &:hover {
+          color: #df6951;
+        }
+
+        @media screen and (max-width: 768px) {
+          color: #fff;
+
+          &:hover {
+            color: #000;
+          }
+        }
       }
     }
   }
@@ -109,12 +118,21 @@ export const Auth = styled.div`
     font-family: "Roboto", sans-serif;
     color: #212832;
     font-weight: 500;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #df6951;
+    }
 
     @media screen and (max-width: 768px) {
       color: #fff;
       display: block;
       margin-top: 3.5rem;
       line-height: 30px;
+
+      &:hover {
+        color: #000;
+      }
     }
   }
 
@@ -124,8 +142,12 @@ export const Auth = styled.div`
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
 
+    &:hover {
+      border: 2px solid #df6951;
+    }
+
     @media screen and (max-width: 768px) {
-      border: 2px solid #fff;
+      border: 2px solid #000;
       margin-left: 0;
     }
   }

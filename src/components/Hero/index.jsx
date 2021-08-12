@@ -30,16 +30,16 @@ function Hero(props) {
             </p>
             <CTA>
               <button className="cta">Find out more</button>
-              <div className="play-demo">
-                <button className="play-button">
-                  <div className="play-button-icon"></div>
+              <div className="play">
+                <button className="play__button">
+                  <div className="play__button-icon"></div>
                 </button>
-                Play Demo
+                <p className="play__text">Play Demo</p>
               </div>
             </CTA>
           </Desc>
           <Image>
-            <img src={HeroImage} />
+            <img className="image" src={HeroImage} alt="hero image" />
           </Image>
         </HeroContent>
       </Container>

@@ -12,7 +12,7 @@ function Home(props) {
       <Hero></Hero>
       <Services></Services>
       <Destinations></Destinations>
-      {/* <BookTrip></BookTrip> */}
+      <BookTrip></BookTrip>
     </Fragment>
   );
 }

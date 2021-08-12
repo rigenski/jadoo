@@ -63,54 +63,66 @@ export const Destination = styled.div`
       0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
       0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
     margin-bottom: 1.5rem;
+    border-radius: 1.5rem;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
       border-radius: 1rem;
     }
-  }
 
-  .card-image {
-    width: 16rem;
-    height: 18rem;
-    object-fit: cover;
+    .card-image {
+      width: 16rem;
+      height: 18rem;
+      object-fit: cover;
+      border-top-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem;
 
-    @media screen and (max-width: 1024px) {
-      width: 12rem;
-      height: 14rem;
-      border-top-left-radius: 1rem;
-      border-top-right-radius: 1rem;
-    }
-  }
-
-  .card-title {
-    display: flex;
-    justify-content: space-between;
-    font-family: "Poppins", sans-serif;
-    padding: 1rem;
-    padding-bottom: 0.5rem;
-    color: #5e6282;
-    font-size: 1rem;
-    font-weight: 600;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 0.875rem;
-    }
-  }
-
-  .card-desc {
-    display: flex;
-    font-family: "Poppins", sans-serif;
-    padding: 0 1rem 1.5rem;
-    color: #5e6282;
-    font-size: 0.825rem;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 0.75rem;
+      @media screen and (max-width: 768px) {
+        width: 10rem;
+        height: 12rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
     }
 
-    img {
-      margin-right: 0.5rem;
-      width: 1rem;
+    .card-title {
+      display: flex;
+      justify-content: space-between;
+      font-family: "Poppins", sans-serif;
+      padding: 1rem;
+      padding-bottom: 0.5rem;
+      color: #5e6282;
+      font-size: 1rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.875rem;
+        padding: 0.75rem;
+        padding-bottom: 0.375rem;
+      }
+    }
+
+    .card-desc {
+      display: flex;
+      font-family: "Poppins", sans-serif;
+      padding: 0 1rem 1.5rem;
+      color: #5e6282;
+      font-size: 0.825rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.75rem;
+        padding: 0 0.75rem 1rem;
+      }
+
+      .card-desc_icon {
+        margin-right: 0.5rem;
+
+        svg {
+          width: 0.825rem;
+
+          @media screen and (max-width: 768px) {
+            width: 0.75rem;
+          }
+        }
+      }
     }
   }
 `;

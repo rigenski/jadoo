@@ -91,9 +91,10 @@ export const CTA = styled.div`
     border-radius: 0.5rem;
     margin-right: 2rem;
     box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.25);
+    cursor: pointer;
     transition: all 0.3s ease;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
       margin-right: 1.5rem;
     }
 
@@ -103,23 +104,23 @@ export const CTA = styled.div`
     }
   }
 
-  .play-demo {
+  .play {
     display: flex;
     color: #5e6282;
     font-family: "Poppins", sans-serif;
     align-items: center;
+    cursor: pointer;
   }
 
-  .play-button {
+  .play__button {
     border: none;
     background-color: #df6951;
-    /* height: 3rem;
-    width: 2.8rem; */
     padding: 1rem 1rem;
     border-radius: 50%;
     margin-right: 0.5rem;
     box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.4);
     transition: all 0.3s ease;
+    cursor: pointer;
 
     &:hover {
       transform: scale(0.96);
@@ -127,10 +128,10 @@ export const CTA = styled.div`
     }
   }
 
-  .play-button-icon {
-    border-top: 0.5rem solid transparent;
-    border-left: 1rem solid #fff;
-    border-bottom: 0.5rem solid transparent;
+  .play__button-icon {
+    border-top: 0.375rem solid transparent;
+    border-left: 0.625rem solid #fff;
+    border-bottom: 0.375rem solid transparent;
   }
 `;
 
@@ -146,13 +147,13 @@ export const Image = styled.div`
     margin-bottom: 2rem;
   }
 
-  img {
+  .image {
     width: 100%;
     background-image: url(${HeroImagePlane}), url(${HeroImagePlane});
     background-repeat: no-repeat, no-repeat;
     background-position: 22% 6%, 98% 16%;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
       width: 80%;
     }
   }
