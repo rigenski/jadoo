@@ -4,6 +4,12 @@ export const Header = styled.header`
   width: 100%;
   display: flex;
   justify-content: center;
+  position: fixed;
+  background-color: #fff;
+  overflow: hidden;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s;
 `;
 
 export const Container = styled.div`
@@ -147,7 +153,7 @@ export const Auth = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-      border: 2px solid #000;
+      border: 2px solid #fff;
       margin-left: 0;
     }
   }

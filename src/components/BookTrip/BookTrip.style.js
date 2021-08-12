@@ -227,6 +227,7 @@ export const Label = styled.div`
   position: absolute;
   margin-top: 10rem;
   margin-left: 12rem;
+  border-radius: 1.5rem;
   background-color: #fff;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
     0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),

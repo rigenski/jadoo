@@ -3,6 +3,7 @@ import HeroDescDecore from "./../../assets/img/section/hero/desc-decore.png";
 import HeroImagePlane from "./../../assets/img/section/hero/image-plane.png";
 
 export const Section = styled.section`
+  margin-top: 5.5rem;
   width: 100%;
   display: flex;
   justify-content: center;

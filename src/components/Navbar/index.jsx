@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   Header,
@@ -13,6 +13,7 @@ import LogoJadoo from "./../../assets/img/logo/logo-jadoo.svg";
 
 function Navbar() {
   const [drawer, setDrawer] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
   const onDrawerClick = () => {
     const nav = document.querySelector(`.${Menu.styledComponentId}`);
@@ -25,6 +26,22 @@ function Navbar() {
       setDrawer(true);
     }
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScrollY(window.pageYOffset);
+    });
+  });
+
+  useEffect(() => {
+    const header = document.querySelector(`.${Header.styledComponentId}`);
+
+    if (scrollY > 10) {
+      header.style.boxShadow = "0px 2px 8px rgba(0, 0, 0, 0.08)";
+    } else {
+      header.style.boxShadow = "none";
+    }
+  }, [scrollY]);
 
   return (
     <Header>
