@@ -9,14 +9,14 @@ import {
 } from "./Hero.style";
 import HeroImage from "./../../assets/img/section/hero/image.png";
 
-function Hero(props) {
+function Hero() {
   return (
     <Section>
       <Container>
         <HeroContent>
           <Desc>
             <h4 className="tagline">BEST DESTINATIONS AROUND THE WORLD</h4>
-            <h1 className="heading">
+            <h1 className="title">
               Travel, enjoy
               <br />
               and live a new and

@@ -64,6 +64,12 @@ export const Destination = styled.div`
       0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
     margin-bottom: 1.5rem;
     border-radius: 1.5rem;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(0.98);
+    }
 
     @media screen and (max-width: 768px) {
       border-radius: 1rem;

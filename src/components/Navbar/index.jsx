@@ -31,7 +31,7 @@ function Navbar() {
     window.addEventListener("scroll", () => {
       setScrollY(window.pageYOffset);
     });
-  });
+  }, [scrollY]);
 
   useEffect(() => {
     const header = document.querySelector(`.${Header.styledComponentId}`);
@@ -50,17 +50,17 @@ function Navbar() {
           <Logo src={LogoJadoo} />
           <Menu>
             <Nav>
-              <ul className="list">
-                <li>
+              <ul className="nav__list">
+                <li className="nav__item">
                   <a href="#">Destinations</a>
                 </li>
-                <li>
+                <li className="nav__item">
                   <a href="#">Hotels</a>
                 </li>
-                <li>
+                <li className="nav__item">
                   <a href="#">Flights</a>
                 </li>
-                <li>
+                <li className="nav__item">
                   <a href="#">Bookings</a>
                 </li>
               </ul>

@@ -45,13 +45,14 @@ export const Menu = styled.div`
   align-items: center;
 
   @media screen and (max-width: 768px) {
+    index: 80;
     flex-direction: column;
     position: fixed;
     width: 100%;
     height: 100%;
     background-color: #ff946d;
     right: -100%;
-    top: 4.5rem;
+    top: 5rem;
     text-align: center;
     transition: all 0.3s;
   }
@@ -155,6 +156,10 @@ export const Auth = styled.div`
     @media screen and (max-width: 768px) {
       border: 2px solid #fff;
       margin-left: 0;
+
+      &:hover {
+        border: 2px solid #212832;
+      }
     }
   }
 `;

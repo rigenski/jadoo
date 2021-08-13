@@ -55,7 +55,7 @@ export const Desc = styled.div`
     margin: 0 0 0.5rem 0;
   }
 
-  .heading {
+  .title {
     font-family: "Volkhov", serif;
     color: #181e4b;
     font-size: 4.5rem;
