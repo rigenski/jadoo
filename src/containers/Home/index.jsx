@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
 import Logos from "../../components/Logos";
 import Navbar from "../../components/Navbar";
-import Services from "../../components/Services/indexs";
+import Services from "../../components/Services";
 import Subscribe from "../../components/Subscribe";
 import Testimonials from "../../components/Testimonials";
 
