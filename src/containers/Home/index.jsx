@@ -5,11 +5,11 @@ import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
 import Logos from "../../components/Logos";
 import Navbar from "../../components/Navbar";
-import Services from "../../components/Services";
+import Services from "../../components/Services/indexs";
 import Subscribe from "../../components/Subscribe";
 import Testimonials from "../../components/Testimonials";
 
-function Home(props) {
+function Home() {
   return (
     <Fragment>
       <Navbar></Navbar>
