@@ -8,7 +8,7 @@ export const Section = styled.section`
   margin-bottom: 4rem;
 
   @media screen and (max-width: 1024px) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
   }
 `;
 
@@ -36,18 +36,21 @@ export const SubscribeContent = styled.div`
   border-top-left-radius: 5rem;
   border-bottom-right-radius: 1.5rem;
 
-  @media screen and (max-width: 1024px) {
-    padding: 6rem 8%;
+  @media screen and (max-width: 768px) {
+    padding: 4rem 6%;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 1rem;
   }
 
   .title {
     font-family: "Poppins", sans-serif;
     font-size: 1.75rem;
+    font-weight: 600;
     color: #5e6282;
     margin-bottom: 6rem;
 
-    @media screen and (max-width: 1024px) {
-      font-size: 1.5rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1.375rem;
       margin-bottom: 4rem;
     }
   }
@@ -55,34 +58,36 @@ export const SubscribeContent = styled.div`
 
 export const Form = styled.div`
   display: flex;
-  width: 70%;
+  width: 80%;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column;
   }
 
-  .form-input {
-    font-family: "Open Sans", sans-serif;
+  .form__input {
+    font-family: "Montserrat", sans-serif;
     font-size: 0.875rem;
     padding: 1rem 2rem;
     padding-left: 4rem;
     border-radius: 0.5rem;
     border: none;
-    margin-right: 1rem;
+    margin-right: 0.875rem;
     width: 100%;
     background-image: url(${FormLetter});
     background-repeat: no-repeat;
-    background-position: 8%;
+    background-position: 2rem;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
       width: auto;
+      padding-left: 2.5rem;
       margin-right: 0;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
+      background-position: 0.75rem;
     }
   }
 
-  .form-btn {
+  .form__btn {
     font-family: "Open Sans", sans-serif;
     font-size: 0.875rem;
     padding: 1rem 2rem;
@@ -92,5 +97,10 @@ export const Form = styled.div`
     border-radius: 0.5rem;
     background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
     cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(0.96);
+    }
   }
 `;

@@ -13,10 +13,10 @@ function Subscribe() {
           <Form>
             <input
               type="text"
-              className="form-input"
+              className="form__input"
               placeholder="Your Email"
             />
-            <button className="form-btn">Subscribe</button>
+            <button className="form__btn">Subscribe</button>
           </Form>
         </SubscribeContent>
       </Container>

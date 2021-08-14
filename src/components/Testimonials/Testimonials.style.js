@@ -7,7 +7,7 @@ export const Section = styled.section`
   margin-bottom: 4rem;
 
   @media screen and (max-width: 1024px) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
   }
 `;
 
@@ -35,25 +35,28 @@ export const TestimonialsContent = styled.div`
 
 export const Desc = styled.div`
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
   width: 44%;
+  margin-bottom: 0;
 
   @media screen and (max-width: 768px) {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .title {
     font-family: "Poppins", sans-serif;
     color: #5e6282;
     margin-bottom: 0.5rem;
+    font-size: 1rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.875rem;
+    }
   }
 
   .desc {
     font-family: "Volkhov", serif;
     font-size: 2.5rem;
-    margin-bottom: 2.5rem;
 
     @media screen and (max-width: 1024px) {
       font-size: 2rem;

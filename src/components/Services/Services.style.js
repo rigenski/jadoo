@@ -4,10 +4,10 @@ export const Section = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 
   @media screen and (max-width: 1024px) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 `;
 
@@ -31,19 +31,27 @@ export const Title = styled.div`
   text-align: center;
   margin-bottom: 3rem;
 
+  @media screen and (max-width: 768px) {
+    margin-bottom: 1.5rem;
+  }
+
   .title {
     font-family: "Poppins", sans-serif;
     color: #5e6282;
     margin-bottom: 0.5rem;
+    font-size: 1rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.875rem;
+    }
   }
 
   .desc {
     font-family: "Volkhov", serif;
     font-size: 2.5rem;
-    margin-bottom: 2.5rem;
 
-    @media screen and (max-width: 1024px) {
-      font-size: 2rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1.625rem;
     }
   }
 `;
@@ -74,21 +82,26 @@ export const Category = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-      padding: 1.5rem 1rem;
+      padding: 1.375rem;
+      margin-bottom: 0.625rem;
     }
 
-    .card-title {
+    .card__image {
+      width: 50%;
+    }
+
+    .card__title {
       font-family: "Open Sans", sans-serif;
       color: #1e1d4c;
       font-size: 1.25rem;
       margin-bottom: 0.5rem;
 
       @media screen and (max-width: 768px) {
-        font-size: 1rem;
+        font-size: 0.875rem;
       }
     }
 
-    .card-desc {
+    .card__desc {
       font-family: "Poppins", sans-serif;
       color: #5e6282;
       font-size: 1rem;

@@ -22,9 +22,9 @@ function Services(props) {
           </Title>
           <Category>
             <div className="card">
-              <img src={SateliteDish} alt="" className="card-image" />
-              <h4 className="card-title">Calculated Weather</h4>
-              <p className="card-desc">
+              <img src={SateliteDish} alt="" className="card__image" />
+              <h4 className="card__title">Calculated Weather</h4>
+              <p className="card__desc">
                 Built Wicker longer
                 <br />
                 admire do barton
@@ -33,9 +33,9 @@ function Services(props) {
               </p>
             </div>
             <div className="card">
-              <img src={Plane} alt="" className="card-image" />
-              <h4 className="card-title">Best Flight</h4>
-              <p className="card-desc">
+              <img src={Plane} alt="" className="card__image" />
+              <h4 className="card__title">Best Flight</h4>
+              <p className="card__desc">
                 Engrossed listening.
                 <br />
                 Park gate sell they west
@@ -44,9 +44,9 @@ function Services(props) {
               </p>
             </div>
             <div className="card">
-              <img src={Microphone} alt="" className="card-image" />
-              <h4 className="card-title">Local Events</h4>
-              <p className="card-desc">
+              <img src={Microphone} alt="" className="card__image" />
+              <h4 className="card__title">Local Events</h4>
+              <p className="card__desc">
                 Barton vanity itself do
                 <br />
                 in it. Preferd to men it
@@ -55,9 +55,9 @@ function Services(props) {
               </p>
             </div>
             <div className="card">
-              <img src={PowerSuply} alt="" className="card-image" />
-              <h4 className="card-title">Customization</h4>
-              <p className="card-desc">
+              <img src={PowerSuply} alt="" className="card__image" />
+              <h4 className="card__title">Customization</h4>
+              <p className="card__desc">
                 We deliver outsourced
                 <br />
                 aviation services for

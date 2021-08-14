@@ -23,15 +23,15 @@ function Destinations() {
             <div className="card">
               <img
                 src={RomeItaly}
-                className="card-image"
+                className="card__image"
                 alt="rome italy destination"
               />
-              <div className="card-title">
+              <div className="card__title">
                 <p>Rome, Italy</p>
                 <p>$5,42k</p>
               </div>
-              <div className="card-desc">
-                <div className="card-desc_icon">
+              <div className="card__desc">
+                <div className="card__desc_icon">
                   <svg
                     width="18"
                     height="18"
@@ -51,15 +51,15 @@ function Destinations() {
             <div className="card">
               <img
                 src={LondonUK}
-                className="card-image"
+                className="card__image"
                 alt="london uk destination"
               />
-              <div className="card-title">
+              <div className="card__title">
                 <p>Rome, Italy</p>
                 <p>$4,2k</p>
               </div>
-              <div className="card-desc">
-                <div className="card-desc_icon">
+              <div className="card__desc">
+                <div className="card__desc_icon">
                   <svg
                     width="18"
                     height="18"
@@ -79,15 +79,15 @@ function Destinations() {
             <div className="card">
               <img
                 src={FullEurope}
-                className="card-image"
+                className="card__image"
                 alt="full europe destination"
               />
-              <div className="card-title">
+              <div className="card__title">
                 <p>Rome, Italy</p>
                 <p>$15k</p>
               </div>
-              <div className="card-desc">
-                <div className="card-desc_icon">
+              <div className="card__desc">
+                <div className="card__desc_icon">
                   <svg
                     width="18"
                     height="18"

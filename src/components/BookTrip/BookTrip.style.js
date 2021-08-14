@@ -7,7 +7,7 @@ export const Section = styled.section`
   margin-bottom: 4rem;
 
   @media screen and (max-width: 1024px) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
   }
 `;
 
@@ -35,19 +35,23 @@ export const BookTripContent = styled.div`
 
 export const Desc = styled.div`
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
   width: 44%;
+  margin-bottom: 0;
 
   @media screen and (max-width: 768px) {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .title {
     font-family: "Poppins", sans-serif;
     color: #5e6282;
     margin-bottom: 0.5rem;
+    font-size: 1rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.875rem;
+    }
   }
 
   .desc {
@@ -64,7 +68,7 @@ export const Desc = styled.div`
 export const Values = styled.ul`
   display: block;
 
-  li {
+  .values__item {
     list-style: none;
     display: flex;
     color: #5e6282;
@@ -72,46 +76,59 @@ export const Values = styled.ul`
     margin-bottom: 1.5rem;
 
     &:nth-child(1) {
-      .values-icon {
+      .values__icon {
         background-color: #f0bb1f;
       }
     }
 
     &:nth-child(2) {
-      .values-icon {
+      .values__icon {
         background-color: #f15a2b;
       }
     }
 
     &:nth-child(3) {
-      .values-icon {
+      .values__icon {
         background-color: #006380;
       }
     }
 
-    .values-icon {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1rem;
+    }
+
+    .values__icon {
       max-height: 2.5rem;
       max-width: 2.5rem;
       padding: 1rem;
       border-radius: 1rem;
+
+      @media screen and (max-width: 768px) {
+        max-height: 2rem;
+        max-width: 2rem;
+        padding: 0.825rem;
+        border-radius: 0.825rem;
+      }
     }
 
-    .values-body {
+    .values__body {
       margin-left: 1rem;
 
-      .values-title {
+      .values__title {
         font-family: "Poppins", sans-serif;
         color: #5e6282;
+        font-size: 1rem;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 768px) {
           font-size: 0.875rem;
         }
       }
 
-      .values-desc {
+      .values__desc {
         font-family: "Poppins", sans-serif;
+        font-size: 0.875rem;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 768px) {
           font-size: 0.75rem;
         }
       }
@@ -141,7 +158,7 @@ export const Card = styled.div`
     0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
     0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
 
-  .card-image {
+  .card__image {
     object-fit: cover;
     border-radius: 1rem;
     width: 20rem;
@@ -151,31 +168,33 @@ export const Card = styled.div`
     }
   }
 
-  .card-title {
+  .card__title {
     font-family: "Poppins", sans-serif;
     color: #080809;
     margin: 1rem 0 0.5rem;
+    font-size: 1rem;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
       font-size: 0.875rem;
     }
   }
 
-  .card-desc {
+  .card__desc {
     font-family: "Poppins", sans-serif;
     color: #5e6282;
     margin-bottom: 1rem;
+    font-size: 0.875rem;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 76px) {
       font-size: 0.75rem;
     }
   }
 
-  .card-label {
+  .card__label {
     display: flex;
     justify-content: space-between;
 
-    .card-label_desc {
+    .card__label_desc {
       display: flex;
       align-items: center;
 
@@ -184,19 +203,33 @@ export const Card = styled.div`
         width: 1rem;
         margin-right: 1rem;
         color: black;
+
+        @media screen and (max-width: 768px) {
+          width: 0.875rem;
+          height: 0.875rem;
+        }
       }
 
       p {
         font-size: 1rem;
         font-family: "Poppins", sans-serif;
         color: #5e6282;
+
+        @media screen and (max-width: 768px) {
+          font-size: 0.875rem;
+        }
       }
     }
 
-    .card-label_icon {
+    .card__label_icon {
       svg {
         height: 1rem;
         width: 1rem;
+
+        @media screen and (max-width: 768px) {
+          height: 0.875rem;
+          width: 0.875rem;
+        }
       }
     }
   }
@@ -235,43 +268,49 @@ export const Label = styled.div`
     0px 20px 13px rgba(0, 0, 0, 0.01),
     0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
     0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translate(0, -1rem);
+  }
 
   @media screen and (max-width: 768px) {
     margin-left: 6rem;
   }
 
-  .label-image {
+  .label__image {
     border-radius: 50%;
     margin-right: 1rem;
     width: 3.5rem;
     height: 3.5rem;
   }
 
-  .label-body {
-    .label-desc {
+  .label__body {
+    .label__desc {
       font-size: 0.875rem;
       font-family: "Poppins", sans-serif;
       color: #5e6282;
 
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 768px) {
         font-size: 0.75rem;
       }
     }
 
-    .label-title {
+    .label__title {
       font-family: "Poppins", sans-serif;
       color: #080809;
+      font-size: 1rem;
 
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 768px) {
         font-size: 0.875rem;
       }
     }
   }
 
-  .label-content {
+  .label__content {
     margin-top: 1rem;
 
-    .label-content-title {
+    .label__content-title {
       font-family: "Poppins", sans-serif;
       font-weight: 500;
       font-size: 0.875rem;
@@ -280,12 +319,12 @@ export const Label = styled.div`
         font-size: 0.75rem;
       }
 
-      .label-content-count {
+      .label__content-count {
         color: #8a79df;
       }
     }
 
-    .label-content-progress {
+    .label__content-progress {
       width: 6rem;
       height: 1rem;
     }

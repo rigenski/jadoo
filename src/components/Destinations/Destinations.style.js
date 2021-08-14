@@ -7,7 +7,7 @@ export const Section = styled.section`
   margin-bottom: 4rem;
 
   @media screen and (max-width: 1024px) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
   }
 `;
 
@@ -31,10 +31,19 @@ export const Title = styled.div`
   text-align: center;
   margin-bottom: 3rem;
 
+  @media screen and (max-width: 768px) {
+    margin-bottom: 1.5rem;
+  }
+
   .title {
     font-family: "Poppins", sans-serif;
     color: #5e6282;
     margin-bottom: 0.5rem;
+    font-size: 1rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.875rem;
+    }
   }
 
   .desc {
@@ -43,7 +52,7 @@ export const Title = styled.div`
     margin-bottom: 2.5rem;
 
     @media screen and (max-width: 1024px) {
-      font-size: 2rem;
+      font-size: 1.625rem;
     }
   }
 `;
@@ -73,9 +82,10 @@ export const Destination = styled.div`
 
     @media screen and (max-width: 768px) {
       border-radius: 1rem;
+      margin-bottom: 1rem;
     }
 
-    .card-image {
+    .card__image {
       width: 16rem;
       height: 18rem;
       object-fit: cover;
@@ -83,14 +93,14 @@ export const Destination = styled.div`
       border-top-right-radius: 1.5rem;
 
       @media screen and (max-width: 768px) {
-        width: 10rem;
+        width: 11rem;
         height: 12rem;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
       }
     }
 
-    .card-title {
+    .card__title {
       display: flex;
       justify-content: space-between;
       font-family: "Poppins", sans-serif;
@@ -101,12 +111,12 @@ export const Destination = styled.div`
 
       @media screen and (max-width: 768px) {
         font-size: 0.875rem;
-        padding: 0.75rem;
+        padding: 0.875rem;
         padding-bottom: 0.375rem;
       }
     }
 
-    .card-desc {
+    .card__desc {
       display: flex;
       font-family: "Poppins", sans-serif;
       padding: 0 1rem 1.5rem;
@@ -118,7 +128,7 @@ export const Destination = styled.div`
         padding: 0 0.75rem 1rem;
       }
 
-      .card-desc_icon {
+      .card__desc_icon {
         margin-right: 0.5rem;
 
         svg {

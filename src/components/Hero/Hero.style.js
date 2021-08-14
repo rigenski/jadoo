@@ -10,7 +10,7 @@ export const Section = styled.section`
   margin-bottom: 4rem;
 
   @media screen and (max-width: 1024px) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 `;
 
@@ -53,6 +53,10 @@ export const Desc = styled.div`
     font-size: 1rem;
     color: #df6951;
     margin: 0 0 0.5rem 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.875rem;
+    }
   }
 
   .title {
@@ -66,7 +70,7 @@ export const Desc = styled.div`
     background-size: 20rem;
 
     @media screen and (max-width: 1024px) {
-      font-size: 3rem;
+      font-size: 2.75rem;
       background-position: 60% 22%;
     }
   }
@@ -76,6 +80,10 @@ export const Desc = styled.div`
     color: #5e6282;
     font-size: 1rem;
     margin-bottom: 1.5rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.875rem;
+    }
   }
 `;
 
@@ -85,7 +93,7 @@ export const CTA = styled.div`
   .cta {
     font-size: 1rem;
     font-family: "Roboto", sans-serif;
-    padding: 0.5rem 1.5rem;
+    padding: 1rem 2rem;
     border: none;
     color: white;
     background-color: #f1a501;
@@ -97,6 +105,8 @@ export const CTA = styled.div`
 
     @media screen and (max-width: 768px) {
       margin-right: 1.5rem;
+      padding: 1rem 2rem;
+      font-size: 0.875rem;
     }
 
     &:hover {
@@ -111,28 +121,42 @@ export const CTA = styled.div`
     font-family: "Poppins", sans-serif;
     align-items: center;
     cursor: pointer;
-  }
 
-  .play__button {
-    border: none;
-    background-color: #df6951;
-    padding: 1rem 1rem;
-    border-radius: 50%;
-    margin-right: 0.5rem;
-    box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.4);
-    transition: all 0.3s ease;
-    cursor: pointer;
+    .play__button {
+      border: none;
+      background-color: #df6951;
+      padding: 1.25rem;
+      border-radius: 50%;
+      margin-right: 0.825rem;
+      box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.4);
+      transition: all 0.3s ease;
+      cursor: pointer;
 
-    &:hover {
-      transform: scale(0.96);
-      box-shadow: 0px 12px 25px rgba(223, 105, 81, 0.3);
+      &:hover {
+        transform: scale(0.96);
+        box-shadow: 0px 12px 25px rgba(223, 105, 81, 0.3);
+      }
+
+      .play__button-icon {
+        border-top: 0.375rem solid transparent;
+        border-left: 0.625rem solid #fff;
+        border-bottom: 0.375rem solid transparent;
+
+        @media screen and (max-width: 768px) {
+          border-top: 0.25rem solid transparent;
+          border-left: 0.5rem solid #fff;
+          border-bottom: 0.25rem solid transparent;
+        }
+      }
     }
-  }
 
-  .play__button-icon {
-    border-top: 0.375rem solid transparent;
-    border-left: 0.625rem solid #fff;
-    border-bottom: 0.375rem solid transparent;
+    .play__text {
+      font-size: 1rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.875rem;
+      }
+    }
   }
 `;
 

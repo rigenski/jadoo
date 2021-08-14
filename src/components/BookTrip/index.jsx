@@ -22,8 +22,8 @@ function BookTrip() {
             <h4 className="title">Easy and Fast</h4>
             <h1 className="desc">Book Your Next Trip in 3 easy Steps</h1>
             <Values>
-              <li>
-                <div className="values-icon">
+              <li className="values__item">
+                <div className="values__icon">
                   <svg
                     width="22"
                     height="22"
@@ -37,16 +37,16 @@ function BookTrip() {
                     />
                   </svg>
                 </div>
-                <div className="values-body">
-                  <h4 className="values-title">Choose Destination</h4>
-                  <p className="values-desc">
+                <div className="values__body">
+                  <h4 className="values__title">Choose Destination</h4>
+                  <p className="values__desc">
                     Lorem ipsum dolor sit amet, consectetur adipsing elit. Urna,
                     tortor tempus.
                   </p>
                 </div>
               </li>
-              <li>
-                <div className="values-icon">
+              <li className="values__item">
+                <div className="values__icon">
                   <svg
                     width="24"
                     height="18"
@@ -92,16 +92,16 @@ function BookTrip() {
                     />
                   </svg>
                 </div>
-                <div className="values-body">
-                  <h4 className="values-title">Make Payment</h4>
-                  <p className="values-desc">
+                <div className="values__body">
+                  <h4 className="values__title">Make Payment</h4>
+                  <p className="values__desc">
                     Lorem ipsum dolor sit amet, consectetur adipsing elit. Urna,
                     tortor tempus.
                   </p>
                 </div>
               </li>
-              <li>
-                <div className="values-icon">
+              <li className="values__item">
+                <div className="values__icon">
                   <svg
                     width="24"
                     height="20"
@@ -132,11 +132,11 @@ function BookTrip() {
                     />
                   </svg>
                 </div>
-                <div className="values-body">
-                  <h4 className="values-title">
+                <div className="values__body">
+                  <h4 className="values__title">
                     Reach Airport on Selected Date
                   </h4>
-                  <p className="values-desc">
+                  <p className="values__desc">
                     Lorem ipsum dolor sit amet, consectetur adipsing elit. Urna,
                     tortor tempus.
                   </p>
@@ -146,9 +146,9 @@ function BookTrip() {
           </Desc>
           <Image>
             <Card>
-              <img src={Greece} className="card-image" alt="greece trip" />
-              <h4 className="card-title">Trip to Greece</h4>
-              <p className="card-desc">14-29 June | by Robbin joseph</p>
+              <img src={Greece} className="card__image" alt="greece trip" />
+              <h4 className="card__title">Trip to Greece</h4>
+              <p className="card__desc">14-29 June | by Robbin joseph</p>
               <Option>
                 <li>
                   <svg
@@ -209,8 +209,8 @@ function BookTrip() {
                   </svg>
                 </li>
               </Option>
-              <div className="card-label">
-                <div className="card-label_desc">
+              <div className="card__label">
+                <div className="card__label_desc">
                   <svg
                     viewBox="0 0 16 16"
                     fill="none"
@@ -271,7 +271,7 @@ function BookTrip() {
                   </svg>
                   <p>24 people going</p>
                 </div>
-                <div className="card-label_icon">
+                <div className="card__label_icon">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -286,19 +286,19 @@ function BookTrip() {
               </div>
             </Card>
             <Label>
-              <img src={Rome} className="label-image" alt="rome trip" />
-              <div className="label-body">
-                <p className="label-desc">Ongoing</p>
-                <h4 className="label-title">Trip to Rome</h4>
-                <div className="label-content">
-                  <p className="label-content-title">
-                    <span className="label-content-count">40% </span> Completed
+              <img src={Rome} className="label__image" alt="rome trip" />
+              <div className="label__body">
+                <p className="label__desc">Ongoing</p>
+                <h4 className="label__title">Trip to Rome</h4>
+                <div className="label__content">
+                  <p className="label__content-title">
+                    <span className="label__content-count">40% </span> Completed
                   </p>
                   <progress
                     min="0"
                     max="100"
                     value="32"
-                    className="label-content-progress"
+                    className="label__content-progress"
                   />
                 </div>
               </div>

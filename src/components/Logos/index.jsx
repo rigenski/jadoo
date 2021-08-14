@@ -11,11 +11,11 @@ function Logos() {
     <Section>
       <Container>
         <LogosContent>
-          <img src={Axon} alt="axon logos" />
-          <img src={Jetstar} alt="jetstar logos" />
-          <img src={Expedia} alt="expedia logos" />
-          <img src={Qantas} alt="qantas logos" />
-          <img src={Alitalia} alt="alitalia logos" />
+          <img className="image" src={Axon} alt="axon logos" />
+          <img className="image" src={Jetstar} alt="jetstar logos" />
+          <img className="image" src={Expedia} alt="expedia logos" />
+          <img className="image" src={Qantas} alt="qantas logos" />
+          <img className="image" src={Alitalia} alt="alitalia logos" />
         </LogosContent>
       </Container>
     </Section>
