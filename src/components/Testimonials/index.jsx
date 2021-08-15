@@ -12,8 +12,8 @@ function Testimonials() {
       <Container>
         <TestimonialsContent>
           <Desc>
-            <h4 className="title">Easy and Fast</h4>
-            <h1 className="desc">Book Your Next Trip in 3 easy Steps</h1>
+            <h4 className="title">TESTIMONIALS</h4>
+            <h1 className="desc">What people say about Us.</h1>
           </Desc>
         </TestimonialsContent>
       </Container>

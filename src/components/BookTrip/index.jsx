@@ -294,12 +294,15 @@ function BookTrip() {
                   <p className="label__content-title">
                     <span className="label__content-count">40% </span> Completed
                   </p>
-                  <progress
+                  {/* <progress
                     min="0"
                     max="100"
                     value="32"
                     className="label__content-progress"
-                  />
+                  /> */}
+                  <div className="label__content-progress">
+                    <div className="label__content-progress--completed"></div>
+                  </div>
                 </div>
               </div>
             </Label>

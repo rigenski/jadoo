@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import DecoreDestination from "./../../assets/img/section/destination/decore-destination.svg";
 
 export const Section = styled.section`
   width: 100%;
@@ -25,6 +26,19 @@ export const Container = styled.div`
 
 export const DestinationsContent = styled.div`
   padding: 2.5rem 0;
+  background-image: url(${DecoreDestination});
+  background-repeat: no-repeat;
+  background-position: top 16rem right 2%;
+  background-size: 6rem;
+
+  @media screen and (max-width: 1024px) {
+    background-position: top 16rem right 1%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    background-position: top 12rem right;
+    background-size: 4rem;
+  }
 `;
 
 export const Title = styled.div`
@@ -65,6 +79,7 @@ export const Destination = styled.div`
 
   .card {
     text-align: center;
+    background-color: #fff;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
       0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
       0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),

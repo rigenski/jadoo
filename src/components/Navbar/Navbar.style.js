@@ -5,7 +5,6 @@ export const Header = styled.header`
   display: flex;
   justify-content: center;
   position: fixed;
-  background-color: #fff;
   overflow: hidden;
   top: 0;
   z-index: 100;
@@ -30,7 +29,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

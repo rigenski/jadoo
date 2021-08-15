@@ -8,19 +8,22 @@ import Navbar from "../../components/Navbar";
 import Services from "../../components/Services";
 import Subscribe from "../../components/Subscribe";
 import Testimonials from "../../components/Testimonials";
+import { Main } from "./Home.style";
 
 function Home() {
   return (
     <Fragment>
       <Navbar></Navbar>
-      <Hero></Hero>
-      <Services></Services>
-      <Destinations></Destinations>
-      <BookTrip></BookTrip>
-      <Testimonials></Testimonials>
-      <Logos></Logos>
-      <Subscribe></Subscribe>
-      <Footer></Footer>
+      <Main>
+        <Hero />
+        <Services />
+        <Destinations />
+        <BookTrip />
+        <Testimonials />
+        <Logos />
+        <Subscribe />
+      </Main>
+      <Footer />
     </Fragment>
   );
 }

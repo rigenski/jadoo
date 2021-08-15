@@ -37,6 +37,7 @@ function Navbar() {
     const header = document.querySelector(`.${Header.styledComponentId}`);
 
     if (scrollY > 10) {
+      header.style.backgroundColor = "#fff";
       header.style.boxShadow = "0px 2px 8px rgba(0, 0, 0, 0.08)";
     } else {
       header.style.boxShadow = "none";

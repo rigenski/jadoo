@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Decore1 from "./../../assets/img/section/services/decore1.svg";
+import Decore2 from "./../../assets/img/section/services/decore2.svg";
 
 export const Section = styled.section`
   width: 100%;
@@ -25,6 +27,15 @@ export const Container = styled.div`
 
 export const ServicesContent = styled.div`
   padding: 2.5rem 0;
+  background-image: url(${Decore2});
+  background-repeat: no-repeat;
+  background-position: top 2rem right;
+  background-size: 8rem;
+
+  @media screen and (max-width: 768px) {
+    background-position: top 3.2rem right;
+    background-size: 6rem;
+  }
 `;
 
 export const Title = styled.div`
@@ -61,6 +72,15 @@ export const Category = styled.div`
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  /* background-image: url(${Decore1});
+  background-repeat: no-repeat;
+  background-position: top 15rem left 28%;
+  background-size: 4rem;
+
+  @media screen and (max-width: 768px) {
+    background-position: top 3.2rem right;
+    background-size: 6rem;
+  } */
 
   .card {
     text-align: center;
@@ -69,6 +89,7 @@ export const Category = styled.div`
 
     &:nth-child(2) {
       border-radius: 2rem;
+      background-color: #fff;
       box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
         0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
         0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),

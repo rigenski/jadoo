@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Decore1 from "./../../assets/img/section/book-trip/decore1.png";
 
 export const Section = styled.section`
   width: 100%;
@@ -28,8 +29,15 @@ export const BookTripContent = styled.div`
   display: flex;
   justify-content: space-between;
 
+  background-image: url(${Decore1});
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 24rem;
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    background-position: top 22rem right 10%;
+    background-size: 20rem;
   }
 `;
 
@@ -314,6 +322,7 @@ export const Label = styled.div`
       font-family: "Poppins", sans-serif;
       font-weight: 500;
       font-size: 0.875rem;
+      margin-bottom: 0.25rem;
 
       @media screen and (max-width: 1024px) {
         font-size: 0.75rem;
@@ -326,7 +335,16 @@ export const Label = styled.div`
 
     .label__content-progress {
       width: 6rem;
-      height: 1rem;
+      height: 0.375rem;
+      background-color: #f5f5f5;
+      border-radius: 2rem;
+
+      .label__content-progress--completed {
+        width: 3rem;
+        height: 0.375rem;
+        background-color: #8a79df;
+        border-radius: 2rem;
+      }
     }
   }
 `;
